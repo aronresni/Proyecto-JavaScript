@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    background-color: antiquewhite;
+}
+.darkMode{
+    color: antiquewhite;
+    background-color: black;
+}
+.logo-header{
+    width: 10%;
+}
+.shop-container{
+    display: flex;
+}
+.logoreact{
+    width: 15%;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
