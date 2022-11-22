@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.logoreact {
+    width: 30%;
+}
+
+.logoname {
+    font-family: "syne";
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-family: "syne";
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.7em;
+    font-family: "syne";
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: "syne";
+    font-weight: 500;
+
+}
+
+p {
+    font-size: 1.25em;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+ul {
+    font-size: 1.25em;
+    font-family: "syne";
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+    font-family: "syne";
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+button {
+    margin: 15px 5px;
+    font-family: "syne";
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 10px 30px;
+    border: 2px solid #22C55E;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: rgb(89, 179, 89);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#portada {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("../assets/Imagebackgroundport.png");
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#articulo {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#articulo .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#nuestros-programas {
+    text-align: center;
+    background-image: url("../assets/background2.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+#nuestros-programas h2 {
+    font-size: 3em;
+}
+
+#nuestros-programas .container {
+    padding: 150px 12px;
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+#nuestros-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 24px;
+
+}
+
+.programas-img {
+    width: 40%;
+}
+
+#caracteristicas {
+    background-color: black;
+    color: white;
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: 700;
+}
+
+#aplica-ya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url("../assets/background3.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin: 0%;
+    padding: 12px;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+@media (min-width: 720px) {
+    #hero h1 {
+        font-size: 4.3em;
+    }
+
+    #articulo .container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #articulo .img-container {
+        background-image: url("../assets/iPhone\ 14\ Pro\ —\ Front.png");
+        background-size: cover;
+        background-position: center center;
+        height: 667.55px;
+        width: 307.92px;
+    }
+
+    #articulo .texto {
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    #nuestros-programas .programas {
+        display: flex;
+        justify-content: center;
+
+    }
+
+#nuestros-programas .programas p{
+    display: block;
+    font-size: 1em;
+}
+
+    #nuestros-programas .carta {
+        padding: 15px;
+
+    }
+
+}
