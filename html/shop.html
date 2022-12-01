@@ -12,123 +12,131 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <!--Css-->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../assets/logo.png">
-  <title>React Shop</title>
+  <link rel="icon" href="../assets/code-slash.svg">
+  <title>Dev International  ¡Completa los Challenge!</title>
 </head>
 
 <body>
   <header>
     <div class="containerheader">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-            <div class="container-fluid">
-                <a class="navbar-brand logoname" href="#">
-                    <img src="../assets/logo.png" alt="Logo" class="d-inline-block align-text-center logoreact">
-                    Programa Ya!</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../html/shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Programa</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand logoname" href="#">
+            <img src="../assets/logo.png" alt="Logo" class="d-inline-block align-text-center logoreact">
+            Dev International</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../html/shop.html">Challenges</a>
+                </li>
+                <li>
+                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/pasos.html">Pasos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-</header>
+  </header>
+  <section id="nuestros-programas">
+    <div class="container-skills">
+      <h3>Inscribete y completa los Challenges para obtener la habilidad</h3>
+    </div>
+  </section>
   <ul>
     <div class="form">
       <div>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" id="buscador" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div>
+          <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" class="btn btn-secondary"><i
+              class="fas fa-shopping-cart fa-1x"></i></a>
+        </div>
       </div>
-      <div>
-        <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" class="btn btn-secondary"><i
-            class="fas fa-shopping-cart fa-1x"></i></a>
+  </ul>
+  <h3 id="loaderTexto" class="text-success text-center">Cargando Productos...</h3>
+  <div id="loader" class="d-flex justify-content-center">
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="coincidencia"></div>
+    <div id="habilidades" class="row">
+    </div>
+  </div>
+
+  <!--Modal-->
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="guardarHabilidadBtn" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
+  </div>
+ 
+
+  <!---Modal Carro de Habilidades-->
+  <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carro de Habilidades</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-bodyHabilidades">
+
+        </div>
+        <div class="row ml-ato">
+          <p id="precioTotal"></p>
+        </div>
+        <div class="modal-footer">
 
 
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar
+            Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  <footer>
     <div class="container">
-      <div id="coincidencia"></div>
-      <div id="habilidades" class="row">
-      </div>
+      <p>&copy;Programar2022</p>
     </div>
-
-    <!--Modal-->
-    <div class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" id="guardarHabilidadBtn" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!---Modal Carro de Habilidades-->
-    <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Carro de Habilidades</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" id="modal-bodyHabilidades">
-
-          </div>
-          <div class="row ml-ato">
-            <p id="precioTotal"></p>
-          </div>
-          <div class="modal-footer">
-
-
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar
-              Compra</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-          <p>&copy;Programar2022</p>
-      </div>
   </footer>
-    <!--sweet alert-->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!---Javascript-->
-    <script src="../Js/class.js"></script>
-    <script src="../Js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"></script>
+  <!--sweet alert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!---Javascript-->
+  <script src="../Js/class.js"></script>
+  <script src="../Js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

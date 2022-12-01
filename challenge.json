@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "lenguaje": "Html",
+        "stack": "Front-End",
+        "horas": 48,
+        "imagen": "icons8-html-5.svg"
+    },
+    {
+        "id": 2,
+        "lenguaje": "Css",
+        "stack": "Front-End",
+        "horas": 34,
+        "imagen": "icons8-css3.svg"
+    },
+    {
+        "id": 3,
+        "lenguaje": "Javascript",
+        "stack": "Front-End",
+        "horas": 42,
+        "imagen": "icons8-javascript.svg"
+    },
+    {
+        "id": 4,
+        "lenguaje": "React",
+        "stack": "Front-End",
+        "horas": 38,
+        "imagen": "icons8-react-native.svg"
+    },
+    {
+        "id": 5,
+        "lenguaje": "Angular",
+        "stack": "Front-End",
+        "horas": 42,
+        "imagen": "icons8-angularjs.svg"
+    },
+    {
+        "id": 6,
+        "lenguaje": "Python",
+        "stack": "Back-End",
+        "horas": 48,
+        "imagen": "icons8-python.svg"
+    },
+    {
+        "id": 7,
+        "lenguaje": "Java",
+        "stack": "Back-End",
+        "horas": 32,
+        "imagen": "icons8-java.svg"
+    },
+    {
+        "id": 8,
+        "lenguaje": "Kotlin",
+        "stack": "Back-End",
+        "horas": 43,
+        "imagen": "icons8-kotlin.svg"
+    },
+    {
+        "id": 9,
+        "lenguaje": "Node Js",
+        "stack": "Front-End",
+        "horas": 48,
+        "imagen": "icons8-node-js.svg"
+    },
+    {
+        "id": 10,
+        "lenguaje": "Swift",
+        "stack": "Full-Stack",
+        "horas": 68,
+        "imagen": "icons8-swift.svg"
+    },
+    {
+        "id": 11,
+        "lenguaje": "Ruby",
+        "stack": "Full-Stack",
+        "horas": 73,
+        "imagen": "icons8-ruby-programming-language (1).svg"
+    },
+    {
+        "id": 12,
+        "lenguaje": "My SQL",
+        "stack": "Back-End",
+        "horas": 62,
+        "imagen": "icons8-my-sql.svg"
+    },
+    {
+        "id": 13,
+        "lenguaje": "Solidity",
+        "stack": "Blockchain",
+        "horas": 103,
+        "imagen": "icons8-solidity.svg"
+    }
+]

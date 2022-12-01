@@ -13,7 +13,7 @@ body {
 }
 
 .logoreact {
-    width: 30%;
+    width: 25%;
 }
 
 .logoname {
@@ -67,12 +67,12 @@ button {
     font-size: 1.25em;
     font-weight: 700;
     padding: 10px 30px;
-    border: 2px solid #22C55E;
+    border: 2px solid #ee3ec9;
     border-radius: 30px;
 }
 
 button:hover {
-    background-color: rgb(89, 179, 89);
+    background-color: #e201b1
 }
 
 .container {
@@ -92,6 +92,38 @@ button:hover {
     background-position: center center;
     background-size: cover;
 
+}
+
+#articulo-pasos1 {
+    background-image: url("../assets/Imagebackgroundport.png");
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#articulo-pasos3 {
+    background-image: url("../assets/Imagebackgroundport2.png");
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#articulo-pasos3 .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+#articulo-pasos {
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#articulo-pasos .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+#articulo-pasos1 .container {
+    text-align: center;
+    padding: 150px 12px;
 }
 
 #articulo {
@@ -132,6 +164,9 @@ button:hover {
 
 }
 
+#nuestros-programas .container-skills{
+    padding: 20px;
+}
 .programas-img {
     width: 40%;
 }
@@ -180,9 +215,59 @@ footer .container {
     align-items: flex-end;
 }
 
+#trabajadores .card .image {
+    height: 140px;
+    width: 140px;
 
+}
+
+
+
+.slider {
+
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .tittle-slider{
+    text-align: center;
+}
+.slider .slider-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+
+.slider .slide img {
+    width: 200px;
+    padding: 35px;
+    padding-left: 20px ;
+}
+.buttons{
+    display: flex;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px*6));
+        transform: translateX(calc(-200px * 6));
+    }
+}
 
 @media (min-width: 720px) {
+
     #hero h1 {
         font-size: 4.3em;
     }
@@ -194,11 +279,11 @@ footer .container {
     }
 
     #articulo .img-container {
-        background-image: url("../assets/iPhone\ 14\ Pro\ —\ Front.png");
+        background-image: url("../assets/[Mockup]\ iPhone\ X.png");
         background-size: cover;
         background-position: center center;
-        height: 667.55px;
-        width: 307.92px;
+        height: 862px;
+        width: 500px;
     }
 
     #articulo .texto {
@@ -219,10 +304,10 @@ footer .container {
 
     }
 
-#nuestros-programas .programas p{
-    display: block;
-    font-size: 1em;
-}
+    #nuestros-programas .programas p {
+        display: block;
+        font-size: 1em;
+    }
 
     #nuestros-programas .carta {
         padding: 15px;
@@ -230,3 +315,9 @@ footer .container {
     }
 
 }
+@media (max-width: 720px) {
+    #articulo{
+        display: none;
+    }
+}
+
