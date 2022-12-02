@@ -197,6 +197,11 @@ button:hover {
     background-position: center center;
     background-size: cover;
 }
+#habilidades {
+    background-image: url("../assets/Imagebackgroundport2.png");
+    background-position: center center;
+    background-size: cover;
+}
 
 footer {
     background-color: black;
